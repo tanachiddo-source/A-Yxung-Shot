@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-editorial: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-frame: #F4F4F4;
+    --bg-matte: #EBEBEB;
+    --bg-dark: #1A1A1A;
+    --text-primary: #1A1A1A;
+    --text-muted: rgba(26, 26, 26, 0.6);
+    --border-ink: rgba(26, 26, 26, 0.12);
+    --border-dark: #2B2B2B;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif, .serif {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+  }
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.font-display {
+  font-family: 'Italiana', 'Cormorant Garamond', serif;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', 'Georgia', serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-accent {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Editorial theme utilities */
+.tracking-tighter-tight {
+  letter-spacing: -0.05em;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.border-ink {
+  border-color: rgba(26, 26, 26, 0.12);
+}
+
+.bg-gallery-paper {
+  background-color: #FFFFFF;
+}
+
+.bg-gallery-frame {
+  background-color: #F4F4F4;
+}
+
+.bg-gallery-matte {
+  background-color: #EBEBEB;
+}
+
+.text-ink {
+  color: #1A1A1A;
+}
+
+.tracking-ultra-wide {
+  letter-spacing: 0.25em;
+}
+
+.tracking-editorial {
+  letter-spacing: 0.18em;
+}
+
+/* Gallery image treatment & matting */
+.gallery-image-hover {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-image-hover:hover {
+  transform: scale(1.02);
+}
+
+.gallery-frame-matting {
+  border: 12px solid #F4F4F4;
+}
+
+@media (min-width: 768px) {
+  .gallery-frame-matting {
+    border: 16px solid #F4F4F4;
+  }
+}
+
+/* Hide scrollbar for clean horizontal archives */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

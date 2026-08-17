@@ -1,0 +1,6 @@
+{
+  "name": "A Yxung Shot",
+  "description": "Editorial photography & visual production portfolio, exhibition archive, and booking platform by Tana (TGS) in Cape Town.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
